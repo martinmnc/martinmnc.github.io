@@ -1,132 +1,176 @@
-.contenedor{
-    width: 95%;
-    /* max-width: 1000px; */
-    margin: 10px auto; /*auto es para centrar*/
-    display: grid;
-    grid-gap: 20px; /*espacio entre las casillas de grid*/
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4,auto);
-    grid-template-areas: "header header  header header"
-                         "sidebar article1 article2 article3"
-                         "sidebar article1 article2 article3"
-                         "footer footer footer footer"   ;
+header{
+    border: 2px;
+    border-color: rgb(243, 242, 242);
+    background-color: rgba(243, 96, 96, 50);
+    margin: 0.5px;
+    padding: 10px;
 }
 
-.contenedor .header,
-.contenedor .sidebar,
-.contenedor .article1,
-.contenedor .article2,
-.contenedor .article3, 
-.contenedor .footer{
-    background-color:antiquewhite;
-    color: lightblue;
+main{
+    background-color: cornflowerblue;
+    border: 5px;
+    border-color: rgb(240, 233, 233);
+    margin: 0.5px;
+    padding: 10px;
 }
 
-.contenedor .header{
-    display: grid;
-    grid-template-columns: 0.3fr 1fr ;
-    grid-template-rows: 1fr;
-    grid-template-areas: "logo lista";
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    margin: 5px;
+    background-color: rgb(116, 230, 116);
     padding: 20px;
-    flex-direction:row ;
-    /* justify-content:space-around ; */
-    grid-area: header;
+
+}
+ul{
+    list-style: circle;
+    padding: 1 px;
+    font-size: 0.5em;
+    color: rgb(218, 247, 237);
 }
 
-.contenedor .logo{
-    grid-area: logo;
-}
 
-
-.contenedor .sidebar{
-    background-color: rgb(177, 238, 177);
-    color: black;
-    /* display: block; */
-    /* row-gap: 5px; */
-    display: flex;
+.section1{
+    display: inline-flex
     flex-direction: column;
-    row-gap: 50px; 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    grid-area: sidebar;
-    overflow:hidden;
-}
-
-.contenedor .article1{
-    display: flex;
-    flex-direction: column;
-    grid-area: article1;
+    margin-left: 2px;
     padding: 10px;
-    background-color: coral;
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-
 }
 
-
-.contenedor .article2{
+.section2{
+    margin: 30px, 20px, 20px, 30px;
+    box-shadow: inset;
+    padding: 25px;
     display: flex;
-    flex-direction: column;
-    grid-area: article2;
-    padding: 10px;
-    background-color: coral;
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
-
+    flex: content;
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(248, 245, 244)
 }
 
-
-
-.contenedor .article3{
-    grid-area: article3;
+.section3{
+    margin: 30px, 20px, 20px, 30px;
+    box-shadow: inset;
+    padding: 25px;
     display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: coral;
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
+    flex: content;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(248, 245, 244)
 }
 
-.contenedor .footer{
-    border-color: black;
-    border-style: double;
-    min-height: 50px;
-    grid-area: footer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+article{
+  display: grid;
+  width: 25%;
+  align-content: center;
 }
 
-@media only screen and (max-width: 900px) {
-    .contenedor{
-    background-color: ;
-    grid-gap: 20px; /*espacio entre las casillas de grid*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4,auto);
-    grid-template-areas: "header header  header header"
-                         "sidebar sidebar sidebar sidebar"
-                         "article1 article1 article2 article2"
-                         "article1 article1 article3 article3"
-                         "footer footer footer footer"   ;
-    }   
-
-    .contenedor .sidebar{
-        display: flex;
-        flex-direction: row;
-        row-gap: 10px;
+.zoom {
+        transition: transform .2s; 
     }
+     
+.zoom:hover {
+        transform: scale(1.2); 
+    }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(212, 147, 122);
+    margin: 0.5px;
+    padding: 10px;
 }
 
-.lista{
-display: flex;
-
-justify-items: space-around;
-grid-area: lista ;
+.logo-nav-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.section1-section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+}
+
+.mainform{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: antiquewhite;
+}
+
+.mainubi{
+    display: flex; 
+    justify-content: center;
+    align-items:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(225, 228, 225);
+    margin: 0.5px;
+    padding: 10px;
+}
+
+.menu{
+    display: flex; 
+    justify-items: center;
+    border-spacing: 20px;
+    color: rgb(225, 228, 225);
+}
+
+nav{
+    align-content: space-between;
+}
+
+h1{
+    text-align: center;
+}
+
+h6, h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding: 5px;
+}
+
+
+    @media only screen and (max-width: 640px) {
+    .section1-section2 {background: rgb(40, 107, 107);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 100%;}
+
+    aside {display:inline-block;
+    flex-direction: row;
+    align-items: center;
+    max-height: 200px;}
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;}
+    }
+    
+   
+    @media only screen and (min-width: 641px) and (max-width: 1280px) {
+        .section1-section2 {background: rgb(107, 45, 3);
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 100%;}
+        aside{display:inline-block;
+        flex-direction: row;}
+        }
