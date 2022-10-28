@@ -14,7 +14,7 @@
                 <img src="img/Logo.png"; width="50px">
                 </a>
                 <nav>
-                <table>
+                <table class="menu">
                     <tr>
                         <td><a href=index.html>Inicio</a></td>
                         <td><a href=Servicios.html>Servicios</a></td>
@@ -27,8 +27,9 @@
         <main class="main">
             <div class="container section1-section2">
                 <section class="section1">
-                    <aside> <form action=""
-                        <label><img src="img/search_FILL0_wght400_GRAD0_opsz48.png">
+                    <aside class="buscador"> <form action=""
+                        <label>
+                            <img src="img/search_FILL0_wght400_GRAD0_opsz48.png">
                             <br>
                             Buscar:
                             <br>
@@ -54,6 +55,7 @@
                                 <option value="LONQUIMAY">LONQUIMAY</option>
                                 <option value="LA CUESTA">LA CUESTA</option>
                             </select>
+                        </label>
                         <br>
                         <br>
                         <label><img src="img/attach_money_FILL0_wght400_GRAD0_opsz48.png">
@@ -69,7 +71,6 @@
                             <option value="100001">Más de $100000</option>
                             </select>
                         </label>
-                       </label>
                     </form>
                 </aside>
                 </section>
@@ -78,37 +79,37 @@
                         <img src="img/Contable.jpg", width="150px", height="150px">
                         <p>Contable</p>
                         <br>
-                        <ul class="lista">
-                            <li>Monotributo-Mi categoría</li>
-                            <li>Sueldo-Mi Ret. de Ganancias</li>
-                            <li>Sueldo-Mi Liquidación</li>
-                            <li>Casas Particulares-Mi Liquidación</li>
-                            <li>Dios!-Libérame del SIRCREB</li>
-                        </ul>
+                        <form class="lista">
+                            <label><input type="radio" name="contable" id="">Monotributo-Mi categoría</label><br>
+                            <label><input type="radio" name="contable" id="">Sueldo-Mi Ret. de Ganancias</label><br>
+                            <label><input type="radio" name="contable" id="">Sueldo-Mi Liquidación</label><br>
+                            <label><input type="radio" name="contable" id="">Casas Particulares-Mi Liquidación</label><br>
+                            <label><input type="radio" name="contable" id="">Dios!-Libérame del SIRCREB</label><br>
+                        </form>
                     </article>
                     <article>
                         <img src="img/Viajes.jpg", width="150px", height="150px">
                         <p>Viajes</p>
                         <br>
-                        <ul class="lista">
-                            <li>Verano 2022</li>
-                            <li>Egresados!</li>
-                            <li>Promociones</li>
-                            <li>Jubilados, a sacarla del colchón!</li>
-                            <li>Brasil, a lalala lalala</li>
-                        </ul>
+                        <form class="lista">
+                            <label><input type="radio" name="viajes" id="">Verano 2022</label><br>
+                            <label><input type="radio" name="viajes" id="">Egresados!</label><br>
+                            <label><input type="radio" name="viajes" id="">Promociones</label><br>
+                            <label><input type="radio" name="viajes" id="">Jubilados, a sacarla del colchón!</label><br>
+                            <label><input type="radio" name="viajes" id="">Brasil, a lalala lalala</label><br>
+                        </form>
                     </article>
                     <article>
                         <img src="img/Seguros.jpg", width="150px", height="150px">
                         <p>Seguros</p>
                         <br>
-                        <ul class="lista">
-                            <li>Inmuebles</li>
-                            <li>Automotores</li>
-                            <li>Producción</li>
-                            <li>ART y personales</li>
-                            <li>Otros</li>
-                        </ul>
+                        <form class="lista">
+                            <label><input type="radio" name="seguros" id="">Inmuebles</label><br>
+                            <label><input type="radio" name="seguros" id="">Automotores</label><br>
+                            <label><input type="radio" name="seguros" id="">Producción</label><br>
+                            <label><input type="radio" name="seguros" id="">ART y personales</label><br>
+                            <label><input type="radio" name="seguros" id="">Otros</label><br>
+                        </form>
                     </article>
                 </section>
             </div>

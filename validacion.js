@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     var Mail = document.getElementById('email').value
-    if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(Mail))) {
+    if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\./.test(Mail))) {
       alert('El e-mail no es válido')
       return
     }
